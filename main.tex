@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Kaustav Chanda} \\ \vspace{1pt}
+    Full Stack Software Developer \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 9748802973 ~ \href{mailto:kaustav.chanda.work@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{kaustav.chanda.work@gmail.om}} ~ 
+    \href{https://linkedin.com/in/kaustav-chanda}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/kaustav-chanda}}  ~
+    \href{https://github.com/kstv364}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/kstv364}}
+    \vspace{-8pt}
+\end{center}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Hyland Software}{Feb 2022 -- Present}
+      {Developer 2, Onbase Engineering}{Kolkata, West Bengal}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{PDF Support} feature for legacy web based OnBase viewer bringing native PDF functionalities such as \textbf{text-selection, copying text, hyperlink support, bookmark support} generating \textbf{3000+ customer interest points} in Hyland Community.}
+        \resumeItem{Modernized development workflow for legacy web application by using \textbf{Typescript} and \textbf{Webpack} tooling promoting \textbf{test-driven-development} approach. }
+        \resumeItem{Containerized legacy web application and automated the process of creating \textbf{Docker images} from latest nightly build and continuous deployment using \textbf{Jenkins} reducing build set up time by around \textbf{75\%.} }
+        \resumeItem{Utilized \textbf{Jenkins} and \textbf{Vagrant} to provide a continuous integration service in order to automate the entire process of provisioning a virtual machine, installing the latest nightly build and test files, running the tests, generating a report of the results and cleaning up the resources once per day.}
+        \resumeItem{Resolved over \textbf{30 accessibility defects} following \textbf{WCAG Conformance} guidelines diverse audiences achieving accessibility backlog reduction by \textbf{13\%. }}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hyland Software}{Aug 2020 -- Jan 2022}
+      {Developer 1, Onbase Engineering}{Kolkata, West Bengal}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development of Hyland's modern \textbf{Angular} platform for \textbf{OnBase}, creating shareable components supporting text selection, text search, bookmarking capabilities integrated using \textbf{GraphQL} and \textbf{REST} endpoints. }
+
+        \resumeItem{Developed full fledged pre-import \textbf{web-viewer} module for showing preview of documents, supporting page manipuation operations such as \textbf{rotate, reorder, delete} before importing to OnBase.}
+        \resumeItem{Integrated \textbf{native desktop functionalities} such as \textbf{scanning} and printing through \textbf{virtual print driver} in web application enabling capturing documents using the above. }
+        \resumeItem{Wrote \textbf{UI automation} and \textbf{Unit tests} using \textbf{Protractor}, \textbf{Jest}, \textbf{Selenium} and increased \textbf{code coverage} to impressive \textbf{73\%}. }
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Food Delivery App} $|$ \emph{ASP.NET, SqlServer, Docker, Kubernetes, Azure Deployments }}{December 2023}
+          \resumeItemListStart
+            \resumeItem{Developed Full-stack Food Delivery App using \textbf{ASP.NET}, \textbf{SQL Server} and \textbf{Entity Framework}. Implemented Authentication and Authorization using \textbf{.NET Identity} and \textbf{Json Web Tokens.} }
+            \resumeItem{Implemented \textbf{CRUD REST endpoints} for different micro-services such as /order, /cart, /coupon, etc.   }
+            \resumeItem{Containerized the different micro-services using \textbf{Docker compose.} }
+
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Signature Capture Module} $|$ \emph{Angular, Jest}}{August 2020}
+          \resumeItemListStart
+            \resumeItem{Created  Unified Web Based \textbf{E- Signature Capture} Module which supports \textbf{plug-and-play} for third-party signature pad devices such as Wacom, Topaz, etc.}
+            \resumeItem{Understood existing {third party SDK’s} and integrated them to fetch captured images from devices.}
+            \resumeItem{Used \textbf{Observer} and \textbf{Strategy Design Pattern} to register different signature capture modules with the central signature capture manager. }
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{:  Java, C\#, HTML/CSS, Typescript, JavaScript, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Visual Studio, IntelliJ, Git, TFS} \\
+     \textbf{Technologies/Frameworks}{: .NET, Linux, Jenkins, Docker, Kubernetes, Vagrant, Webpack} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Heritage Institute of Technology (DGPA - 8.95) }{July 2016 -- May 2020}
+      {Bachelor of Technology in Computer Science and Engineering} {Kolkata, West Bengal} \\
+   
+  \resumeSubHeadingListEnd
+
+
+
+%-----------INVOLVEMENT---------------
+\section{Achievements}
+    \resumeItemListStart
+        \resumeSubItem{Won the Hyland SPOT award 2021, 2023.}
+        \resumeSubItem{NASA Space Apps Challenge 2017 Finalist.}
+        \resumeSubItem{School Topper in Mathematics}
+   
+    \resumeItemListEnd
+
+
+
+\end{document}
