@@ -1,0 +1,212 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsNames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Kaustav Chanda} \\ \vspace{1pt}
+    Senior Software Engineer \\ \vspace{1pt}
+    \small \href{mailto:kaustav.chanda.work@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{kaustav.chanda.work@gmail.com}} ~ 
+    \href{https://linkedin.com/in/kaustav-chanda}{\raisebox{-0.2\height}\faLinkedin\ \underline{/LinkedIn}}  ~
+    \href{https://github.com/kstv364}{\raisebox{-0.2\height}\faGithub\ \underline{/kstv364}} ~
+     \href{https://medium.com/@kstvkmrchanda2}{\raisebox{-0.2\height}\faMedium\ \underline{/medium}}  ~
+     \href{https://www.hackerrank.com/profile/Kaustav97}{\raisebox{-0.2\height}\faHackerrank\ \underline{/Kaustav97}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Hyland Software}{Oct 2020 -- Present}
+      {Developer 2, Content Federation Services}{Kolkata, West Bengal}
+      \resumeItemListStart
+
+      \resumeItem{Led the design and development of a \textbf{highly scalable, robust multi-tenant WebSocket broker application} for real-time information exchange across diverse on-prem content management systems, implementing an \textbf{event-driven, plugin-based architecture} to ensure extensibility and seamless integration.}
+      
+      \resumeItem{Acted as a \textbf{technical lead} for critical features, providing \textbf{guidance to junior engineers} and conducting \textbf{code and design reviews} to uphold architectural standards and code quality.}
+
+      \resumeItem{Developed a test harness simulating \textbf{Amazon API Gateway} to validate complex API interactions, reducing endpoint validation time by \textbf{40\%} and streamlining integration testing, showcasing strong \textbf{complex system design} and debugging skills.}
+
+      \resumeItem{Refactored core components of the \textbf{broker WebSocket application}, applying \textbf{Factory, Adapter, and Dependency Injection} design patterns to significantly improve \textbf{code maintainability, scalability}, and system resilience.}
+
+      \resumeItem{Achieved \textbf{100\% unit test coverage} for critical business logic and \textbf{$>$85\% overall test coverage}, enhancing system reliability and reducing production defects by \textbf{30\%}.}
+
+      \resumeItem{Independently researched, designed, and implemented a \textbf{Proof of Concept (PoC)} for \textbf{streaming large files ($>$20GB) between AWS S3 and on-prem servers}, achieving \textbf{seamless content federation} with a \textbf{20\% improvement in transfer efficiency}, addressing an open-ended technical challenge and demonstrating advanced \textbf{AWS S3} utilization.}
+
+      \resumeItem{Automated \textbf{CI/CD pipelines} using \textbf{GitHub Actions} for continuous deployment to \textbf{AWS-integrated sandbox and staging environments}, improving deployment frequency by \textbf{3x} and integrating \textbf{SonarCloud scanning} for robust code quality and security.}
+
+      \resumeItem{Participated in the \textbf{on-call rotation}, promptly responding to and resolving critical service issues to ensure high availability and operational excellence of the backend systems.}
+
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI Personal Sidekick} $|$ \emph{Python, LangChain, LangGraph, LLMs, AWS}}{December 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a personal AI sidekick leveraging \textbf{LangChain} and \textbf{LangGraph} for complex conversational flows and advanced agentic reasoning.}
+            \resumeItem{Implemented \textbf{Retrieval-Augmented Generation (RAG)} to provide context-aware responses from diverse knowledge bases, enhancing accuracy and relevance.}
+            \resumeItem{Deployed core components as serverless functions on \textbf{AWS Lambda} with data storage in \textbf{AWS S3} and exposed via \textbf{API Gateway}, demonstrating robust cloud-native architecture for LLM applications.}
+            \resumeItem{Utilized various \textbf{Large Language Models (LLMs)} to enhance natural language understanding and generation capabilities, integrating \textbf{Agents} and \textbf{Tools} for dynamic interactions.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{YouTube Video Summarizer} $|$ \emph{Python, LLMs, FastAPI, Docker, AWS}}{August 2025}
+          \resumeItemListStart
+            \resumeItem{Built an automated system to summarize YouTube videos by extracting audio, converting to text, and processing with \textbf{Large Language Models (LLMs)} for concise summaries.}
+            \resumeItem{Developed a \textbf{FastAPI} backend to expose summarization endpoints, ensuring high throughput, scalability, and efficient API design.}
+            \resumeItem{Containerized the application using \textbf{Docker} for consistent, portable deployment across various environments.}
+            \resumeItem{Designed for deployment on \textbf{AWS EC2/ECS} to efficiently handle computational demands of audio processing and LLM inference, showcasing cloud application operation skills.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, Python (with static typing), SQL} \\
+     \textbf{Cloud/DevOps}{: AWS (S3, Lambda, API Gateway, EC2/ECS), Docker, Kubernetes, GitHub Actions, Linux, CI/CD, Microservices} \\
+     \textbf{AI/ML}{: Large Language Models (LLMs), LangChain, LangGraph, RAG, Agents, Tools, Generative AI} \\
+     \textbf{Architecture}{: System Design, Distributed Systems, Multi-tenant Systems, Event-Driven Architecture, Microservices} \\
+     \textbf{Frameworks/Tools}{: .NET, Webpack, FastAPI, VS Code, Visual Studio, Git} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Heritage Institute of Technology (DGPA - 8.95) }{July 2016 -- May 2020}
+      {Bachelor of Technology in Computer Science and Engineering} {Kolkata, West Bengal} \\
+   
+  \resumeSubHeadingListEnd
+
+\end{document}
